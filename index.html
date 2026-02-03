@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan's Portfolio</title>
+    <script src="https://kit.fontawesome.com/764aa81b8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------------Header----------------->
+    <div id="header-section">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header-section">Home</a>
+                    </li>
+                    <li><a href="#about-section">About</a>
+                    </li>
+                    <li>
+                        <a href="#project-section">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#service-section">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Software Development Engineer In Testing</p>
+                <h1>Hi , I am <br><span> Vuyani Ryan Koko </span> </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------about-section----------------->
+    <div id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Junior SDET with a foundation in IT Systems Development, skilled in building and maintaining test
+automation frameworks using Selenium with Java. Experienced in developing automated test scripts,
+enhancing coverage and efficiency, and integrating QA into the SDLC. Strong analytical, problem-solving,
+and collaborative skills, passionate about driving software quality through modern testing practices.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Programming Languages</span><br>Java, Kotlin & JavaScript
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>HTML5, CSS3, JavaScript (ES6+), ReactJS, Responsive Web Design, Basic Frontend Performance Optimization
+                            </li>
+                            <li>
+                                <span>Test Automation & QA</span><br>Selenium WebDriver, TestNG & JUnit, Cucumber (BDD), Rest Assured, Karate Framework, Manual Testing (Functional, Regression, Smoke), Test Case Design & Execution, Bug Reporting & Defect Tracking
+                            </li>
+                            <li>
+                                <span>Software Tools</span><br>VS code, IntelliJ, Netbeans, Android Studio & Eclipse
+                            </li>
+                            <li>
+                                <span>API Testing</span><br>Postman, REST API Testing, Token-Based Authentication, JSON & XML Validation
+                            </li>
+                            <li>
+                                <span>Databases</span><br>SQL, Writing Basic to Intermediate Queries, Data Validation & Backend Testing
+                            </li>
+                            <li>
+                                <span>Version Control & Collaboration</span><br>Git, GitHub, Branching, Merging & Pull Requests, Agile / Scrum Collaboration
+                            </li>
+                            <li>
+                                <span>Reporting & Documentation</span><br>Extent Reports, Test Execution Reports, Test Plans & Test Scenarios, Technical Documentation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span></span><br>
+                            <li style="font-size: 14px;"></li>
+                            </li>
+                            <li>
+                                <span>
+                        
+                                </span><br>
+                            <li style="font-size: 14px;"></li>
+                            </li>
+                            <li>
+                                <span>2023</span><br> Diploma In Systems Development
+                            <li style="font-size: 14px;"> Boston City campus & business College</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--------------service-section----------------->
+    <div id="service-section">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Test Automation Development</h2>
+                    <p>I design and build reliable automated test scripts to ensure applications work as expected across releases. I focus on reducing manual effort, increasing test coverage, and catching bugs early in the development cycle.
+
+What I do:
+
+UI test automation using Selenium (Java)
+
+API test automation using Rest Assured / Postman / Karate
+
+Writing maintainable, reusable test frameworks
+
+Data-driven and BDD (Cucumber) test automation.</p>
+                    <a href="https://www.geeksforgeeks.org/software-testing/automation-testing-software-testing/"
+                        target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the process of creating websites and web applications. It involves front-end
+                        development for user interfaces using HTML, CSS, and JavaScript, as well as back-end development
+                        for server-side functionality.</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>API Testing & Validation</h2>
+                    <p>I validate backend services to ensure data integrity, performance, and reliability across systems.
+
+What I do:
+
+REST API testing using Postman & Rest Assured
+
+Token-based authentication testing
+
+JSON & XML response validation
+
+API automation integration into test suites.</p>
+                    <a href="https://www.geeksforgeeks.org/software-engineering/api-testing-software-testing/" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------contact-section----------------->
+    <div id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Ryanmahlaku@protonmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +27661974530</p>
+                    <div class="social-icons">
+                    
+                        <a href="https://www.linkedin.com/in/ryan-mahlaku-578320284/"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="images/Ryan    Koko  CV.pdf" download class="btn btn2 ">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mnjzrzrz" method="POST" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--------------Copyright----------------->
+        <div class="copyright">
+            <p>Copyright &copy; <span id="yearlyDate"></span> <span id="time"></span> Ryan. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        const yearlyDate = new Date().getFullYear();
+        document.getElementById("yearlyDate").textContent = yearlyDate;
+
+        
+        function opentab(tabname) {
+            
+            for (tablink of tablinks) {
+                tablink.classList.remove("active");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqwXBjiQ8d6FWamNAK0e9nuwSlwzOXjuYROQWZr32hJJH6Vi4rN5P76c7W-2fM8RVGBA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
